@@ -13,4 +13,11 @@ export type Planet = {
     created: string;
     edited: string;
     url: string;
-  };
+};
+  
+export type Planets = {
+  count: number;
+  next: string | null;
+  previous: string | null;
+  results: Planet[];
+};

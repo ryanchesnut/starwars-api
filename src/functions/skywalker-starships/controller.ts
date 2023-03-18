@@ -2,7 +2,7 @@ import { NodeFetch } from "@libs/fetch";
 import { Person, Starship } from "src/types";
 
 export const getLukesStarships = async () => {
-    let lukeData: Person = await NodeFetch.get(process.env.STARWARS_BASE_API, '/people/1')
+    let lukeData = await NodeFetch.get(process.env.STARWARS_BASE_API, '/people/1') as Person
    return getStarships(lukeData)
 }
 
@@ -13,7 +13,7 @@ const getStarships = async (lukeData: Person): Promise<Array<Starship>> => {
     const starshipsPromises: Array<Promise<Starship>> = lukeData?.starships?.map((starshipUrl: String) => {
         return new Promise(async(resolve, reject) => {
             starshipUrl = starshipUrl.replace(process.env.STARWARS_BASE_API, "");
-            const res: any = await NodeFetch.get(process.env.STARWARS_BASE_API, starshipUrl)
+            const res = await NodeFetch.get(process.env.STARWARS_BASE_API, starshipUrl) as Starship
             if (!res) {
                return reject(null)
             }
