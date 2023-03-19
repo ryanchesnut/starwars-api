@@ -2,6 +2,7 @@ import fetch from "node-fetch";
 
 export const get = async (base: string, url: string) => {
   const fullUrl: string = `${base}${url}`;
+
   const res = await fetch(fullUrl);
 
   if (!res) {
@@ -10,7 +11,7 @@ export const get = async (base: string, url: string) => {
   }
   if (res.status !== 200) {
     console.error(`Get response not 200 from ${fullUrl}`, res);
-    throw new Error(`API returned status ${res.status}`);
+    return;
   }
 
   return res.json();

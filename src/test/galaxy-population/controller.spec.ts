@@ -3,6 +3,7 @@ import {
   getAllPlanets,
   sumPlanetPopulation,
 } from "@functions/galaxy-population/controller";
+
 import { Planet } from "src/types";
 
 import { planet1, planet2, planet3, planet4, planet5, planet6 } from "./mocks";
@@ -44,21 +45,21 @@ test("Should return 0 when No population found in planets data ", () => {
 });
 
 test("Should return 0 if empty array provided", () => {
-  const planetData: Planet[] = []; // empety planet data
+  const planetData: Planet[] = []; // empty planet data
   const expectedResult = "0";
   const result = sumPlanetPopulation(planetData);
   expect(result).toBe(expectedResult);
 });
 
 test("Should return 0 when empty string", () => {
-  const planetData: Planet[] = [planet5]; // empety planet data
+  const planetData: Planet[] = [planet5]; // empty planet data
   const expectedResult = "0";
   const result = sumPlanetPopulation(planetData);
   expect(result).toBe(expectedResult);
 });
 
 test("Should return 0 when undefined", () => {
-  const planetData: Planet[] = [planet6]; // empety planet data
+  const planetData: Planet[] = [planet6]; // empty planet data
   const expectedResult = "0";
   const result = sumPlanetPopulation(planetData);
   expect(result).toBe(expectedResult);
