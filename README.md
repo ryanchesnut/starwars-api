@@ -5,7 +5,9 @@
 ## Endpoints
 
 │ GET | http://localhost:8000/dev/skywalkerStarships │
+
 │ GET | http://localhost:8000/dev/speciesClassificationEp1 │
+
 │ GET | http://localhost:8000/dev/galaxyPopulation │
 
 ## Star Wars API (SWAPI) Wrapper
