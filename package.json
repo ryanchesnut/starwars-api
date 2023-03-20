@@ -4,8 +4,10 @@
   "description": "Serverless aws-nodejs-typescript template",
   "main": "serverless.ts",
   "scripts": {
+    "swagger:generate": "serverless openapi generate", 
     "test": "jest --verbose",
     "test:watch": "jest --verbose --silent=false --watch",
+    "test:coverage": "jest test --coverage", 
     "dev": "serverless offline --httpPort 8000 --reloadHandler"
   },
   "engines": {

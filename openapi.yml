@@ -6,4 +6,31 @@ info:
   title: My Service API
   description: API for My Service
   version: 1.0.0
-paths: {}
+paths:
+  /skywalkerStarships:
+    get:
+      operationId: skywalkerStarships
+      summary: Get Luke Skywalker's starships
+      description: Returns all of Luke Skywalker's starships
+      tags:
+        - Luke
+        - Skywalker
+        - Starships
+      responses: {}
+  /speciesClassificationEp1:
+    get:
+      operationId: speciesClassificationEp1
+      summary: Get the classification of all species in the 1st episode.
+      description: Return the classification of all species in the 1st episode.
+      tags:
+        - Classification
+        - Species
+      responses: {}
+  /galaxyPopulation:
+    get:
+      operationId: galaxyPopulation
+      summary: Get the population of the galaxy
+      description: Returns the population of the entire galaxy.
+      tags:
+        - Galaxy
+      responses: {}
