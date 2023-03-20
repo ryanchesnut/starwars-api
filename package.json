@@ -5,7 +5,6 @@
   "main": "serverless.ts",
   "scripts": {
     "test": "jest --verbose",
-    "test:mocha": "ts-mocha -r tsconfig-paths/register 'src/test/**/*.test.ts'",
     "test:watch": "jest --verbose --silent=false --watch",
     "dev": "serverless offline --httpPort 8000 --reloadHandler"
   },
