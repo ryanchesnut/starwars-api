@@ -1,14 +1,5 @@
 node_modules
 .env
 .esbuild/.build
-
-.esbuild/.build/src/functions/species-classification/handler.js.map
-.esbuild/.build/src/functions/species-classification/handler.js.map
-.esbuild/.build/src/functions/species-classification/handler.js
-.esbuild/.build/src/functions/skywalker-starships/handler.js.map
-.esbuild/.build/src/functions/skywalker-starships/handler.js
-.esbuild/.build/src/functions/hello/handler.js.map
-.esbuild/.build/src/functions/hello/handler.js
-.esbuild/.build/src/functions/galaxy-population/handler.js.map
-.esbuild/.build/src/functions/galaxy-population/handler.js
 coverage
+.serverless
